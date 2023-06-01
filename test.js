@@ -2,7 +2,14 @@
 var dataset = ee.Image("DLR/WSF/WSF2015/v1");
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
 
+var opacity = 0.75;
+var blackBackground = ee.Image(0);
+Map.addLayer(blackBackground, null, 'Black background', true, opacity);
 
-Map.addLayer(wsf, {min: 0, max: 1}, "WSF 2015")
+var visualization = {
+  min: 0,
+  max: 255,
+};
+Map.addLayer(dataset, visualization, 'Human settlement areas');
 
-print('Hello world!');
+Map.setCenter(90.45, 23.7, 7);
