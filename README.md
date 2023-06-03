@@ -1,5 +1,8 @@
 # Deforestation and 1st day of no snow cover
 
+-   Link to Google Earth Engine : [Google
+    Earth](https://code.earthengine.google.com/3c259a25af3a242b423448c0d268b8c1)
+
 A google earth engine project to visualize Deforestation and 1st of no
 snow cover in the USA. This is in preparation for a Teaching Assistant
 role I am interested in.
